@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "fishclient",
+  "version": "${version}",
+  "name": "Fish Client",
+  "description": "Minimalistyczny HUD: FPS, CPS, ping, koordynaty i keystrokes z edytorem (domyślnie Prawy Shift).",
+  "authors": ["Fish Client"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.fishclient.FishClient"]
+  },
+  "mixins": [
+    {
+      "config": "fishclient.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
